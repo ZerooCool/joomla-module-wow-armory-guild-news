@@ -33,9 +33,10 @@
     <updateservers>
         <server type="collection" priority="1" name="z-index development">http://www.z-index.net/en/extensions.xml</server>
 <!-- Détailler encore le fonctionnement de updateservers *** -->
-<!-- Ajouter un fichier .xml sur notre serveur. -->
+        
+<!-- Ajouter un fichier extensions.xml sur notre serveur. -->
 <!-- À l'intérieur des balises <extensionset name="z-index development"></extensionset> -->
-<!-- La ligne suivante -->
+<!-- Ajouter la ligne suivante -->
 <!-- <extension targetplatformversion="^3\." name="WoW Armory Guild News" version="rev 62" type="module" element="mod_wow_armory_guild_news" detailsurl="https://www.z-index.net/en/joomla/wow-armory-guild-news/updatestream.xml" infourl="https://www.z-index.net/en/joomla-world-of-warcraft-extensions/wow-armory-guild-news.html"/> -->
     </updateservers>
     <media folder="media" destination="mod_wow_armory_guild_news">
