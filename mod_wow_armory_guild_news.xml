@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5" client="site" method="upgrade">
+<extension type="module" version="3.0" client="site" method="upgrade">
     <name>MOD_WOW_ARMORY_GUILD_NEWS</name>
     <author>Branko Wilhelm</author>
+    <!-- <improvement_by>Zer00CooL</improvement_by> -->
     <creationDate>Sep 2011</creationDate>
+    <!-- <improvement_date>2019</improvement_date> -->
     <copyright>(c) 2011 - 2015 Branko Wilhelm</copyright>
     <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
     <authorEmail>branko.wilhelm@gmail.com</authorEmail>
+    <!-- <improvement_mail>mail@visionduweb.com</improvement_mail> -->
     <authorUrl>www.z-index.net</authorUrl>
+    <!-- <improvement_URL>https://www.visionduweb.fr</improvement_URL> -->
+    <!-- <improvement_Github>https://github.com/ZerooCool/joomla-module-wow-armory-guild-news</improvement_Github> -->
     <version>@REVISION@</version>
+    <!-- Description -->
     <description>MOD_WOW_ARMORY_GUILD_NEWS_DESC</description>
+    <!-- Fichiers et dossiers du module -->
     <files>
         <filename module="mod_wow_armory_guild_news">mod_wow_armory_guild_news.php</filename>
         <filename>helper.php</filename>
         <folder>tmpl</folder>
     </files>
+    <!-- Script d'installation -->
     <scriptfile>script.installer.php</scriptfile>
+    <!-- Fichiers .ini pour les traductions du module -->
     <languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_wow_armory_guild_news.ini</language>
         <language tag="en-GB">en-GB/en-GB.mod_wow_armory_guild_news.sys.ini</language>
@@ -23,6 +32,11 @@
     </languages>
     <updateservers>
         <server type="collection" priority="1" name="z-index development">http://www.z-index.net/en/extensions.xml</server>
+<!-- Détailler encore le fonctionnement de updateservers *** -->
+<!-- Ajouter un fichier .xml sur notre serveur. -->
+<!-- À l'intérieur des balises <extensionset name="z-index development"></extensionset> -->
+<!-- La ligne suivante -->
+<!-- <extension targetplatformversion="^3\." name="WoW Armory Guild News" version="rev 62" type="module" element="mod_wow_armory_guild_news" detailsurl="https://www.z-index.net/en/joomla/wow-armory-guild-news/updatestream.xml" infourl="https://www.z-index.net/en/joomla-world-of-warcraft-extensions/wow-armory-guild-news.html"/> -->
     </updateservers>
     <media folder="media" destination="mod_wow_armory_guild_news">
         <folder>css</folder>
