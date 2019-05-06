@@ -30,14 +30,18 @@
         <language tag="de-DE">de-DE/de-DE.mod_wow_armory_guild_news.ini</language>
         <language tag="de-DE">de-DE/de-DE.mod_wow_armory_guild_news.sys.ini</language>
     </languages>
+ 
+    <!--
+    Le système de mise à jour XML permet à l'administrateur Joomla d'être informé des notifications de mises à jour.
+    Si ce système n'est pas renseigné, l’utilisateur devra faire les mises à jour de lui même.
+    -->
     <updateservers>
+    <!-- Ajouter un fichier extensions.xml sur notre serveur. -->
+    <!-- À l'intérieur des balises <extensionset name="z-index development"></extensionset> -->
+    <!-- Ajouter la ligne suivante -->
+    <!-- <extension targetplatformversion="^3\." name="WoW Armory Guild News" version="rev 62" type="module" element="mod_wow_armory_guild_news" detailsurl="https://www.z-index.net/en/joomla/wow-armory-guild-news/updatestream.xml" infourl="https://www.z-index.net/en/joomla-world-of-warcraft-extensions/wow-armory-guild-news.html"/> -->
         <server type="collection" priority="1" name="z-index development">http://www.z-index.net/en/extensions.xml</server>
-<!-- Détailler encore le fonctionnement de updateservers *** -->
         
-<!-- Ajouter un fichier extensions.xml sur notre serveur. -->
-<!-- À l'intérieur des balises <extensionset name="z-index development"></extensionset> -->
-<!-- Ajouter la ligne suivante -->
-<!-- <extension targetplatformversion="^3\." name="WoW Armory Guild News" version="rev 62" type="module" element="mod_wow_armory_guild_news" detailsurl="https://www.z-index.net/en/joomla/wow-armory-guild-news/updatestream.xml" infourl="https://www.z-index.net/en/joomla-world-of-warcraft-extensions/wow-armory-guild-news.html"/> -->
     </updateservers>
     <media folder="media" destination="mod_wow_armory_guild_news">
         <folder>css</folder>
